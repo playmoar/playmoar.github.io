@@ -6,12 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Savory</title>
   <link rel="stylesheet" href="style.css">
-
+  <link href="animate.css" rel="stylesheet">
+  <script src="js/wow.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </head>
 <body>
   <header>
       <div class="wrap-logo">
-        <img class="header-logo" src="img/logo.png" alt="Logo">
+        <img class="header-logo animated slideInUp" src="img/logo.png" alt="Logo">
       </div>
       <nav>  
         <ul class="header-menu">
@@ -28,7 +32,7 @@
   <section class="property-types">
     <h3 class="property-types-title">Недвижимость, с которой мы работаем</h3>
     <div class="diff-types">
-      <div class="office wow fadeIn" data-wow-offset="10">
+      <div class="office wow fadeInUp" data-wow-offset="10">
         <img src="img/office.png" alt="Офисы">
         <div class="office-title">
           <p>ОФИСНЫЕ БИЗНЕС-ЦЕНТРЫ</p>
@@ -42,14 +46,14 @@
         </div>
       </div>
 
-      <div class="office wow fadeIn " data-wow-delay="1s" data-wow-offset="10">
+      <div class="office wow fadeInUp " data-wow-delay="1s" data-wow-offset="10">
         <img src="img/hotel.png" alt="Офисы">
         <div class="office-title">
           <p>ГОСТИНИЦЫ</p>
         </div>
       </div>
       
-      <div class="office wow fadeIn " data-wow-delay="1.5s" data-wow-offset="10">
+      <div class="office wow fadeInUp " data-wow-delay="1.5s" data-wow-offset="10">
         <img src="img/warehouse.png" alt="Офисы">
         <div class="office-title">
          <p>СКЛАДСКИЕ КОМПЛЕКСЫ</p>
@@ -59,7 +63,7 @@
   </section>
 
   <section class="change">
-    <h3 class="change-title">Меняем класс офисов без отселения арендаторов</h3>
+    <h3 class="change-title wow fadeInUp">Меняем класс офисов без отселения арендаторов</h3>
     <div class="blue-line-left"></div>
     <h4 class="change-subtitle">Из класса «С» в «В», из «В» в «В+», с минимальными бюджетами.</h4>
   </section>
@@ -164,9 +168,8 @@
 
   <section class="reasons">
     <h3 class="reasons-title">Ещё 10 причин почему именно мы</h3>
-    <div class="button-border">
       <button class="reasons-button">Узнать</button>
-    </div>
+
   </section>
 </body>
 </html>
