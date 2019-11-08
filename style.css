@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display|Roboto&display=swap");
 body {
   margin: 0;
 }
@@ -15,8 +16,8 @@ header {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "wrap-logo header-menu" ". header-title" ". header-subtitle";
-  -ms-grid-rows: 40% 10% 45%;
-      grid-template-rows: 40% 10% 45%;
+  -ms-grid-rows: 35% 24% 37%;
+      grid-template-rows: 35% 24% 37%;
   -ms-grid-columns: 58% 42%;
       grid-template-columns: 58% 42%;
   height: 80vh;
@@ -36,6 +37,9 @@ nav {
 }
 
 .header-menu {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: header-menu;
@@ -48,13 +52,26 @@ nav {
   padding-right: 10%;
 }
 
+.header-menu a {
+  text-decoration: none;
+  color: black;
+}
+
 .header-title {
+  width: 80%;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: header-title;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 52px;
 }
 
 .header-subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 22px;
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: header-subtitle;
@@ -68,10 +85,14 @@ nav {
   -ms-grid-column: 1;
   grid-area: wrap-logo;
   padding-top: 8%;
-  padding-left: 7.8%;
+  padding-left: 10%;
 }
 
 .diff-types {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
   display: -ms-grid;
   display: grid;
   width: 80%;
@@ -96,6 +117,9 @@ nav {
 }
 
 .property-types-title {
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  font-size: 41px;
   padding-top: 10vh;
   padding-left: 15%;
   padding-bottom: 5vh;
@@ -104,22 +128,26 @@ nav {
 .change {
   padding-top: 1vh;
   background-image: url(img/change-bg.png);
-  background-size: cover;
+  background-size: 90%;
   background-repeat: no-repeat;
   background-position: bottom left;
   height: 800px;
   display: -ms-grid;
   display: grid;
       grid-template-areas: ". ." ". change-title" ". blue-line" ". change-subtitle";
-  -ms-grid-rows: 35% 5% 1% 45%;
-      grid-template-rows: 35% 5% 1% 45%;
-  -ms-grid-columns: 58% 42%;
-      grid-template-columns: 58% 42%;
+  -ms-grid-rows: 35% 22% 5% 35%;
+      grid-template-rows: 35% 22% 5% 35%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
 }
 
 .change-title {
+  width: 90%;
+  font-size: 40px;
+  font-weight: normal;
+  font-family: "Playfair Display", serif;
   -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: change-title;
 }
 
@@ -153,28 +181,57 @@ nav {
 }
 
 .change-subtitle {
+  width: 90%;
+  font-size: 22px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
   -ms-grid-row: 4;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: change-subtitle;
 }
 
 .automate {
+  text-align: right;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 10vh;
+  padding-top: 1vh;
   background-image: url(img/automate-bg.png);
-  background-size: 100%;
+  background-size: 80%;
   background-repeat: no-repeat;
   background-position: bottom right;
   height: 90vh;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: ". ." "change-title ." "blue-line ." "change-subtitle .";
-  -ms-grid-rows: 35% 5% 1% 45%;
-      grid-template-rows: 35% 5% 1% 45%;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+      grid-template-areas: ". ." "automate-title ." "blue-line ." "automate-subtitle .";
+  -ms-grid-rows: 35% 17% 5% 25%;
+      grid-template-rows: 35% 17% 5% 25%;
+  -ms-grid-columns: 52% 48%;
+      grid-template-columns: 52% 48%;
   text-align: end;
+}
+
+.automate-title {
+  width: 90%;
+  font-size: 40px;
+  font-weight: normal;
+  font-family: "Playfair Display", serif;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: automate-title;
+  margin-left: auto;
+  text-align: right;
+}
+
+.automate-subtitle {
+  width: 80%;
+  font-size: 22px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: automate-subtitle;
+  margin-left: auto;
+  text-align: right;
 }
 
 .cashflow {
@@ -187,11 +244,14 @@ nav {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "cashflow-title" "white-line" "cashflow-subtitle";
-  -ms-grid-rows: 50% 2% 20%;
-      grid-template-rows: 50% 2% 20%;
+  -ms-grid-rows: 57% 1% 20%;
+      grid-template-rows: 57% 1% 20%;
 }
 
 .cashflow-title {
+  font-size: 113px;
+  font-weight: normal;
+  font-family: "Playfair Display", serif;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: cashflow-title;
@@ -202,11 +262,17 @@ nav {
 }
 
 .cashflow-subtitle {
+  font-size: 18px;
+  margin: auto;
+  width: 50%;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: cashflow-subtitle;
   margin: auto;
   color: white;
+  text-align: center;
 }
 
 .white-line {
@@ -226,6 +292,10 @@ nav {
 }
 
 .audit-title {
+  width: 80%;
+  font-size: 40px;
+  font-weight: normal;
+  font-family: "Playfair Display", serif;
   margin: auto;
   padding-bottom: 1.5vh;
   text-align: center;

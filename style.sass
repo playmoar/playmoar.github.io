@@ -1,3 +1,5 @@
+@import fonts.sass
+
 body
   margin: 0
 
@@ -12,7 +14,7 @@ header
   background-attachment: fixed
   display: grid
   grid-template-areas: "wrap-logo header-menu" ". header-title" ". header-subtitle"
-  grid-template-rows: 40% 10% 45%
+  grid-template-rows: 35% 24% 37%
   grid-template-columns: 58% 42% 
   height: 80vh
   
@@ -29,6 +31,9 @@ nav
   grid-area: header-logo
 
 .header-menu
+  color: white
+  font-family: $subtitle
+  font-size: 18px
   grid-area: header-menu
   margin: 0
   padding: 0
@@ -37,19 +42,35 @@ nav
   display: inline
   padding-right: 10%
 
+.header-menu a
+  text-decoration: none
+  color: black
+
 .header-title
+  width: 80%
   grid-area: header-title
+  font-family: $title
+  text-decoration: none
+  font-weight: normal
+  font-size: 52px
 
 .header-subtitle
+  font-family: $subtitle
+  font-weight: normal
+  font-size: 22px
   grid-area: header-subtitle
   align-self: start
 
 .wrap-logo
   grid-area: wrap-logo
   padding-top: 8%
-  padding-left: 7.8%
+  padding-left: 10%
 
 .diff-types
+  font-family: $subtitle
+  font-weight: normal
+  font-size: 18px
+  font-style: normal
   display: grid
   width: 80%
   grid-template-columns: 22% 22% 22% 22%
@@ -68,6 +89,9 @@ nav
   box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.15)
 
 .property-types-title
+  font-family: $title
+  font-weight: normal
+  font-size: 41px
   padding-top: 10vh
   padding-left: 15%
   padding-bottom: 5vh
@@ -75,16 +99,20 @@ nav
 .change
   padding-top: 1vh
   background-image: url(img/change-bg.png)
-  background-size: cover
+  background-size: 90%
   background-repeat: no-repeat
   background-position: bottom left
   height: 800px
   display: grid
   grid-template-areas: ". ."". change-title" ". blue-line" ". change-subtitle"
-  grid-template-rows: 35% 5% 1% 45%
-  grid-template-columns: 58% 42% 
+  grid-template-rows: 35% 22% 5% 35%
+  grid-template-columns: 50% 50% 
 
 .change-title
+  width: 90%
+  font-size: 40px
+  font-weight: normal
+  font-family: $title
   grid-area: change-title
 
 .blue-line
@@ -108,22 +136,46 @@ nav
   margin: auto
 
 .change-subtitle
+  width: 90%
+  font-size: 22px
+  font-weight: normal
+  font-family: $subtitle
   grid-area: change-subtitle
 
 .automate
+  text-align: right
   margin-left: auto
   margin-right: auto
-  padding-top: 10vh
+  padding-top: 1vh
   background-image: url(img/automate-bg.png)
-  background-size: 100%
+  background-size: 80%
   background-repeat: no-repeat
   background-position: bottom right
   height:  90vh
   display: grid
-  grid-template-areas: ". .""change-title ." "blue-line ." "change-subtitle ."
-  grid-template-rows: 35% 5% 1% 45%
-  grid-template-columns: 50% 50% 
+  grid-template-areas: ". .""automate-title ." "blue-line ." "automate-subtitle ."
+  grid-template-rows: 35% 17% 5% 25%
+  grid-template-columns: 52% 48% 
   text-align: end
+
+.automate-title
+  width: 90%
+  font-size: 40px
+  font-weight: normal
+  font-family: $title
+  grid-area: automate-title
+  margin-left: auto
+  text-align: right
+
+.automate-subtitle
+  width: 80%
+  font-size: 22px
+  font-weight: normal
+  font-family: $subtitle
+  grid-area: automate-subtitle
+  margin-left: auto
+  text-align: right
+
 
 .cashflow
   margin-top: 50px
@@ -134,10 +186,13 @@ nav
   background-position: center center
   display: grid
   grid-template-areas: "cashflow-title" "white-line" "cashflow-subtitle"
-  grid-template-rows: 50% 2% 20%
+  grid-template-rows: 57% 1% 20%
 
 
 .cashflow-title
+  font-size: 113px
+  font-weight: normal
+  font-family: $title
   grid-area: cashflow-title
   margin: auto
   font-size: 103px
@@ -147,9 +202,15 @@ nav
 
 
 .cashflow-subtitle
+  font-size: 18px
+  margin: auto
+  width: 50%
+  font-weight: normal
+  font-family: $subtitle
   grid-area: cashflow-subtitle
   margin: auto
   color: white
+  text-align: center
 
 .white-line
   grid-area: white-line
@@ -164,6 +225,10 @@ nav
   margin: auto
 
 .audit-title
+  width: 80%
+  font-size: 40px
+  font-weight: normal
+  font-family: $title
   margin: auto
   padding-bottom: 1.5vh
   text-align: center
