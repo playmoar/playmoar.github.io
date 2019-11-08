@@ -257,7 +257,7 @@ nav
   text-align: center
 
 .audit-actions
-  width: 80%
+  width: 90%
   margin: auto
   font-size: 22px
   font-weight: normal
@@ -267,6 +267,7 @@ nav
   grid-template-areas: "a1 a2" "a3 a4"
   grid-template-rows: 48% 48%
   grid-gap: 4%
+
 .audit-actions p
   vertical-align: super
   display: inline-block
@@ -277,10 +278,16 @@ nav
   grid-area: a1
   text-align: right
 
+.action2
+  grid-area: a2
+
 .action3
   grid-area: a3
   text-align: right
-  
+
+.action4
+  grid-area: a4
+
 .check 
   width: 35px
   height: 35px
@@ -422,7 +429,7 @@ nav
   font: inherit
   color: inherit
   background-color: transparent
-  width: 242px
+  width: 60%
   height: 64px
   border-radius: 10px
   box-shadow: 2.5px 4.3px 15.7px 0.3px rgba(0, 0, 0, 0.31)
@@ -530,6 +537,15 @@ nav
   
   .blue-line-left2
     display: none
+  
+@media screen and ( max-width:1540px )
+
+  .audit
+    width: 100%
+
+  .audit-actions
+    width: 100%
+    font-size: 20px
 
 @media screen and ( max-width:1420px )
 
@@ -609,6 +625,7 @@ nav
 @media screen and ( max-width:1110px )
   header
     grid-template-rows: 35% 18% 37%
+    grid-template-columns: 55% 45%
 
   .change-title
     font-size: 32px
@@ -632,6 +649,9 @@ nav
   header
     grid-template-rows: 35% 14% 37%
 
+  .audit-actions
+    font-size: 15px
+  
   .automate
     height: 500px
   .header-title
@@ -712,3 +732,80 @@ nav
   
   .header-title
     width: 96%
+
+@media screen and ( max-width:750px )
+  
+  header 
+    background-image: url(img/header-bg-750.png)
+    background-color: white
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    background-attachment: fixed
+    display: block
+    height: 600px
+    align-items: center
+  
+  nav
+    text-align: center
+    width: 100%
+    display: block
+  
+  .wrap-logo
+    padding-top: 0
+    padding-left: 0
+    display: flex;
+    align-items: center;
+  
+  .wrap-logo img
+    text-align: center
+    padding-top: 10%
+    margin-left: auto;
+    margin-right: auto;
+  
+  .header-menu 
+    font-size: 20px
+  
+  .header-title
+    padding-top: 20%
+    text-align: center
+
+  .header-subtitle
+    text-align: center
+  
+  .header-menu li:last-child
+    padding-right: 0
+  
+  .diff-types
+    font-family: $subtitle
+    font-weight: normal
+    font-size: 18px
+    font-style: normal
+    width: 100%
+    height: 1150px
+    display: flex;
+    flex-direction: column
+  
+  .diff-types img
+    width: 100%
+  
+  .office
+    display: flex
+    flex-direction: column
+    align-items: center
+    border-radius: 0
+    box-shadow: none
+
+  .office img
+    height: 250px
+    width: 95%
+    object-fit: cover
+    border-radius: 0
+    margin: 0 auto
+
+  .property-types-title
+    text-align: center
+    font-size: 22px
+  
+  .office-title
+    font-size: 15px
