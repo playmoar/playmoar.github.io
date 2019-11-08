@@ -1,4 +1,5 @@
 @import fonts.sass
+   
 
 body
   margin: 0
@@ -123,6 +124,12 @@ nav
   margin-left: auto
 
 .blue-line-left
+  grid-area: blue-line
+  width: 5%
+  height: 15px
+  border-bottom: 1px solid #58d3f6
+
+.blue-line-left2
   grid-area: blue-line
   width: 5%
   height: 15px
@@ -332,10 +339,12 @@ nav
   grid-gap: 20px
 
 .shtern-img
+  object-fit: cover;
   grid-area: shtern-img
   
 
 .shtern-img img
+  object-fit: cover;
   width: 100%
   height: 100%
 
@@ -351,7 +360,7 @@ nav
   font-size: 40px
   font-weight: normal
   font-family: $title
-  width: 90%
+  width: 80%
   font-size: 40px
   line-height: 52px
 
@@ -391,6 +400,7 @@ nav
   grid-area: old-man-img
 
 .old-man-img img
+  object-fit: cover;
   width: 100%
   height: 100%
 
@@ -408,12 +418,13 @@ nav
   font-size: 20px
   font-weight: normal
   font-family: $subtitle
+
 .transition
   height: 40vh
   background-image: url(img/transition.png)
   background-size: cover
   background-repeat: no-repeat
-  background-position: center center
+  background-position: center bottom
 
 .pack 
   padding-top: 10vh
@@ -452,7 +463,7 @@ nav
   background-image: url(img/10reasons.png)
   background-size: cover
   background-repeat: no-repeat
-  background-position: center center
+  background-position: bottom right
   height: 40vh
 
 .reasons-title
@@ -489,3 +500,193 @@ nav
   font-weight: normal
   font-family: $subtitle
 
+@media screen and ( max-width:1650px )
+  .pack-img
+    display: none
+  
+  .pack-content
+    padding-left: 28%
+    text-align: center
+    padding-top: 0
+  
+  .pack
+    margin: auto
+    padding-top: 5vh
+  
+  .reasons 
+    margin-top: 7vh
+  
+  .blue-line-left2
+    display: none
+
+@media screen and ( max-width:1420px )
+
+  .header-title
+    font-size: 44px
+    width: 90%
+
+  header
+    grid-template-rows: 35% 19% 37%
+
+  .header-menu 
+    font-size: 15px
+  
+  .diff-types
+    width: 90%
+    grid-column-gap: 2%
+    grid-template-columns: 24% 24% 24% 24%
+  
+  .property-types-title
+    padding-left: 5%
+    padding-top: 5vh
+  
+  .irrelevant
+    background-position: center center
+    height: 700px
+    grid-template-columns: 43% 57% 
+    grid-template-rows: 15% 15% 3% 45%
+  
+  .irrelevant-title
+    font-size: 35px
+
+  .irrelevant-subtitle
+    font-size: 19px
+  
+  .change
+    height: 500px
+    grid-template-rows: 20% 22% 5% 35%
+  
+  .automate
+    height:  60vh
+    grid-template-rows: 20% 17% 5% 25%
+  
+  .cashflow
+    height: 400px
+    grid-template-rows: 55% 1% 25%
+  
+  .cashflow-title
+    padding-top: 3%
+  
+  .blue-line
+    display: none
+  
+  .blue-line-left
+    display: none
+  
+  .own-system
+    padding-top: 3vh
+    padding-bottom: 7vh
+  
+  .transition
+    height: 20vh
+    background-position: center bottom
+
+  .pack-content
+    padding-left: 25%
+    text-align: center
+    padding-top: 0
+  
+  .pack
+    margin: auto
+    padding-top: 5vh
+  
+  .reasons 
+    margin-top: 7vh
+    height: 30vh
+
+@media screen and ( max-width:1110px )
+
+  .change-title
+    font-size: 32px
+  
+  .change-subtitle
+    font-size: 18px
+  
+  .automate-title
+    font-size: 32px
+  
+  .automate-subtitle
+    font-size: 18px
+  
+  .pack-content
+    padding-left: 16%
+  
+  .header-menu li
+    padding-right: 5%
+
+@media screen and ( max-width:1070px )
+
+  .header-title
+    font-size: 35px
+  
+  .diff-types
+    width: 100%
+    grid-column-gap: 1%
+    grid-template-columns: 25% 25% 25% 24%
+  
+  .property-types-title
+    padding-left: 0
+    padding-top: 2vh
+    padding-bottom: 2vh
+    font-size: 35px
+  
+  .change-title
+    width: 100%
+  
+  .irrelevant
+    background-position: center center
+    height: 500px
+    grid-template-columns: 43% 57% 
+    grid-template-rows: 15% 15% 3% 45%
+  
+  .irrelevant-title
+    font-size: 30px
+
+  .irrelevant-subtitle
+    font-size: 15px
+  
+  .cashflow-title
+    font-size: 80px
+
+  .cashflow
+    height: 300px
+    grid-template-rows: 55% 1% 25%
+  
+  .own-system
+    padding-top: 2vh
+    padding-bottom: 5vh
+  
+  .own-system-title
+    font-size: 30px
+  
+  .own-system-subtitle
+    font-size: 18px
+    padding-bottom: 1vh
+  
+  .pack-title
+    font-size: 30px
+  
+  .pack-subtitle
+    font-size: 18px
+  
+  .pack-content
+    padding-left: 20%
+  
+  .reasons 
+    margin-top: 7vh
+    height: 25vh
+  
+  .reasons-title
+    font-size: 30px
+  
+  .reasons-button
+    font-size: 18px
+  
+  .irrelevant
+    background-position: center center
+    height: 700px
+    grid-template-columns: 43% 57% 
+    grid-template-rows: 15% 12% 3% 45%
+  
+  .how
+    padding-bottom: 3vh
