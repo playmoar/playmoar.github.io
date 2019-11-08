@@ -20,7 +20,7 @@ header {
       grid-template-rows: 35% 24% 37%;
   -ms-grid-columns: 58% 42%;
       grid-template-columns: 58% 42%;
-  height: 80vh;
+  height: 775px;
 }
 
 nav {
@@ -208,7 +208,7 @@ nav {
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: bottom right;
-  height: 90vh;
+  height: 700px;
   display: -ms-grid;
   display: grid;
       grid-template-areas: ". ." "automate-title ." "blue-line ." "automate-subtitle .";
@@ -433,9 +433,9 @@ nav {
       grid-template-areas: "shtern-img how-desc" "any-budget old-man-img";
   -ms-grid-rows: 50% 50%;
       grid-template-rows: 50% 50%;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  grid-gap: 20px;
+  -ms-grid-columns: 49.5% 49.5%;
+      grid-template-columns: 49.5% 49.5%;
+  grid-gap: 1%;
 }
 
 .shtern-img {
@@ -456,12 +456,15 @@ nav {
 .how-desc {
   width: 100%;
   height: 100%;
-  padding-top: 12%;
-  padding-left: 15%;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: how-desc;
   background-color: #fafafa;
+}
+
+.how-wrap {
+  padding-top: 12%;
+  padding-left: 15%;
 }
 
 .how-desc-title {
@@ -518,6 +521,8 @@ nav {
 }
 
 .old-man-img img {
+  -o-object-position: right top;
+     object-position: right top;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -736,6 +741,10 @@ nav {
 }
 
 @media screen and (max-width: 1110px) {
+  header {
+    -ms-grid-rows: 35% 18% 37%;
+        grid-template-rows: 35% 18% 37%;
+  }
   .change-title {
     font-size: 32px;
   }
@@ -757,14 +766,21 @@ nav {
 }
 
 @media screen and (max-width: 1070px) {
+  header {
+    -ms-grid-rows: 35% 14% 37%;
+        grid-template-rows: 35% 14% 37%;
+  }
+  .automate {
+    height: 500px;
+  }
   .header-title {
     font-size: 35px;
   }
   .diff-types {
-    width: 100%;
+    width: 99%;
     grid-column-gap: 1%;
-    -ms-grid-columns: 25% 25% 25% 24%;
-        grid-template-columns: 25% 25% 25% 24%;
+    -ms-grid-columns: 24.5% 24.5% 24.5% 24%;
+        grid-template-columns: 24.5% 24.5% 24.5% 24%;
   }
   .property-types-title {
     padding-left: 0;
@@ -837,6 +853,9 @@ nav {
   }
   .how {
     padding-bottom: 3vh;
+  }
+  .header-title {
+    width: 96%;
   }
 }
 /*# sourceMappingURL=style.css.map */
