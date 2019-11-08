@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display|Roboto&display=swap");
 body {
+  width: 100%;
   margin: 0;
 }
 
@@ -57,6 +58,10 @@ nav {
   color: black;
 }
 
+.header-menu a:hover {
+  color: #16c1f3;
+}
+
 .header-title {
   width: 80%;
   -ms-grid-row: 2;
@@ -112,8 +117,13 @@ nav {
 }
 
 .office {
-  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px 4px;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.office img {
+  border-radius: 20px 4px;
 }
 
 .property-types-title {
