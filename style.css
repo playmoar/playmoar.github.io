@@ -302,12 +302,20 @@ nav {
 }
 
 .audit-subtitle {
+  font-size: 22px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
   margin: auto;
   padding-top: 3vh;
   text-align: center;
 }
 
 .audit-actions {
+  width: 80%;
+  margin: auto;
+  font-size: 22px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
   padding-top: 3vh;
   display: -ms-grid;
   display: grid;
@@ -357,19 +365,27 @@ nav {
   display: -ms-grid;
   display: grid;
       grid-template-areas: ". ." ". irrelevant-title" ". blue-line" ". irrelevant-subtitle";
-  -ms-grid-rows: 30% 5% 1% 45%;
-      grid-template-rows: 30% 5% 1% 45%;
+  -ms-grid-rows: 20% 15% 3% 45%;
+      grid-template-rows: 20% 15% 3% 45%;
   -ms-grid-columns: 52% 48%;
       grid-template-columns: 52% 48%;
 }
 
 .irrelevant-title {
+  width: 90%;
+  font-size: 40px;
+  font-weight: normal;
+  font-family: "Playfair Display", serif;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: irrelevant-title;
 }
 
 .irrelevant-subtitle {
+  width: 90%;
+  font-size: 22px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: irrelevant-subtitle;
@@ -377,17 +393,26 @@ nav {
 }
 
 .own-system {
-  padding-top: 13vh;
-  padding-bottom: 13vh;
+  width: 90%;
+  padding-top: 10vh;
+  margin: auto;
+  padding-bottom: 14vh;
   text-align: center;
 }
 
 .own-system-title {
-  padding-bottom: 2vh;
+  font-size: 40px;
+  font-weight: normal;
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
 }
 
 .own-system-subtitle {
-  padding-bottom: 2vh;
+  font-size: 22px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 3vh;
+  line-height: 1.68;
 }
 
 .how {
@@ -427,16 +452,22 @@ nav {
 }
 
 .how-desc-title {
+  font-size: 40px;
+  font-weight: normal;
+  font-family: "Playfair Display", serif;
   width: 90%;
   font-size: 40px;
   line-height: 52px;
 }
 
 .how-desc-subtitle {
+  font-size: 22px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
   padding-bottom: 8%;
   padding-top: 4%;
   font-size: 22px;
-  width: 80%;
+  width: 70%;
 }
 
 .any-budget {
@@ -449,12 +480,18 @@ nav {
 }
 
 .any-budget-title {
+  font-size: 40px;
+  font-weight: normal;
+  font-family: "Playfair Display", serif;
   width: 90%;
   font-size: 40px;
   line-height: 52px;
 }
 
 .any-budget-subtitle {
+  font-size: 22px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
   padding-bottom: 8%;
   padding-top: 4%;
   font-size: 22px;
@@ -484,6 +521,9 @@ nav {
   -webkit-box-shadow: 2.5px 4.3px 15.7px 0.3px rgba(0, 0, 0, 0.31);
           box-shadow: 2.5px 4.3px 15.7px 0.3px rgba(0, 0, 0, 0.31);
   background-color: #ffffff;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
 }
 
 .transition {
@@ -500,7 +540,7 @@ nav {
 
 .pack-content {
   padding-left: 10%;
-  padding-top: 10%;
+  padding-top: 4%;
   display: inline-block;
 }
 
@@ -513,11 +553,19 @@ nav {
 }
 
 .pack-title {
+  width: 90%;
+  font-size: 40px;
+  font-weight: normal;
+  font-family: "Playfair Display", serif;
   right: 10%;
   grid-area: pack-title;
 }
 
 .pack-subtitle {
+  width: 80%;
+  font-size: 22px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
   grid-area: pack-subtitle;
 }
 
@@ -531,6 +579,9 @@ nav {
 }
 
 .reasons-title {
+  font-size: 40px;
+  font-weight: normal;
+  font-family: "Playfair Display", serif;
   padding-bottom: 2vh;
   text-align: center;
   color: white;
@@ -560,5 +611,8 @@ nav {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   border: 1px solid white;
+  font-size: 22px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
