@@ -1202,6 +1202,7 @@ footer p {
   }
   .office-title {
     font-size: 15px;
+    padding-bottom: 5px;
   }
   .change-title {
     font-size: 25px;
@@ -1273,6 +1274,14 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
+  .reasons-title {
+    padding-top: 10%;
+    font-size: 18px;
+  }
+  .reasons-button {
+    font-size: 15px;
+    width: 40%;
+  }
   header {
     height: 100vw;
   }
@@ -1354,6 +1363,7 @@ footer p {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     grid-gap: 1%;
+    padding-bottom: 5vh;
   }
   .how-desc-title {
     font-size: 22px;
@@ -1387,6 +1397,83 @@ footer p {
     text-align: center;
     margin: 0 auto;
     padding-top: 7%;
+  }
+  .footer-up-button {
+    display: none;
+  }
+  .footer-contacts {
+    width: 20vw;
+  }
+  footer {
+    height: 33vh;
+  }
+  .footer-menu {
+    height: 12vh;
+  }
+  .footer-desc-title {
+    font-size: 14px;
+  }
+  .footer-desc-line2 {
+    font-size: 10px;
+  }
+  .footer-desc-line3 {
+    font-size: 10px;
+  }
+  .footer-socials-title {
+    font-size: 14px;
+  }
+  .footer-socials-list {
+    font-size: 10px;
+  }
+  .footer-contacts {
+    font-size: 10px;
+    height: 33vh;
+  }
+  .footer-contacts img {
+    width: 85%;
+  }
+  .footer-menu {
+    font-size: 10px;
+  }
+  .footer-up-button {
+    font-size: 10px;
+  }
+  header {
+    height: 500px;
+  }
+  .change-title {
+    font-size: 18px;
+    width: 90%;
+  }
+  .change-subtitle {
+    font-size: 12px;
+  }
+  .automate-title {
+    font-size: 18px;
+  }
+  .automate-subtitle {
+    font-size: 12px;
+  }
+  .cashflow-subtitle {
+    width: 80%;
+  }
+  .irrelevant-title {
+    font-size: 18px;
+  }
+  .irrelevant-subtitle {
+    font-size: 12px;
+  }
+  .show-case {
+    font-size: 14px;
+  }
+  .pack-subtitle {
+    width: 100%;
+  }
+  .pack-title {
+    width: 100%;
+  }
+  .pack-content {
+    padding-left: 3%;
   }
 }
 /*# sourceMappingURL=style.css.map */
