@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display|Roboto&display=swap");
+body {
+  margin: 0;
+}
+
+header {
+  background-image: url(img/header-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "wrap-logo header-menu" ". header-title" ". header-subtitle";
+  -ms-grid-rows: 35% 24% 37%;
+      grid-template-rows: 35% 24% 37%;
+  -ms-grid-columns: 58% 42%;
+      grid-template-columns: 58% 42%;
+  height: 775px;
+}
+
+nav {
+  margin: 0;
+  padding-top: 10%;
+  width: 100%;
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-logo {
+  grid-area: header-logo;
+}
+
+.header-menu {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: header-menu;
+  margin: 0;
+  padding: 0;
+}
+
+.header-menu li {
+  display: inline;
+  padding-right: 10%;
+}
+
+.header-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-menu a:hover {
+  color: #16c1f3;
+}
+
+.wrap-logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: wrap-logo;
+  padding-top: 8%;
+  padding-left: 10%;
+}
+/*# sourceMappingURL=cases.css.map */
